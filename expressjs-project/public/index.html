@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: #211f1f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🏠 Home Page</h1>
+    <p>Welcome Home.</p>
+    <button id="profileButton">Your Profile</button>
+
+    <script>
+        const profileButton = document.getElementById('profileButton');
+
+        profileButton.addEventListener('click', () => {
+            window.location.href = 'http://localhost:3000/user-profile';
+        });
+    </script>
+</body>
+
+</html>

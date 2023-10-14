@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #211f1f;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile {
+            background-color: #c4c1b6;
+            width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 4px solid #c4c1b6;
+            border-radius: 5px;
+            box-shadow: 0px 0px 6px 2px #c4c1b6;
+        }
+
+        .profile h2 {
+            color: #333;
+            font-size: 35px;
+            margin-top: 2px;
+            margin-bottom: 12px;
+        }
+
+        .profile p {
+            color: #666;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .profile .info {
+            text-align: left;
+        }
+
+        .profile a {
+            text-decoration: none;
+            color: #0c4078;
+            font-weight: bold;
+        }
+
+        .profile a:hover {
+            text-decoration: underline;
+        }
+
+        .profile span {
+            color: #0c4078;
+            font-weight: bold;
+        }
+
+        .profile img {
+            vertical-align: middle;
+            border: 3px solid #796b6b;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+        <img src="http://localhost:3000/user-profile/image" alt="User Picture" width="150" height="150">
+        <h2>{{name}}</h2>
+        <p class="info">Role: <span>{{role}}</span></p>
+        <p class="info">Email: <a href="mailto:{{email}}">{{email}}</a></p>
+        <p class="info">Location: <span>{{location}}</span></p>
+
+    </div>
+
+</body>
+
+</html>
