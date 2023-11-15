@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Security Example</title>
+</head>
+
+<style>
+  .div1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* max-width: 225px; */
+    border: #a02c2d solid 7px;
+    padding: 10px;
+    background-color: rgb(245 243 242);
+    height: 300px;
+    width: 600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #7c1f1f;
+    font-size: 55px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    color: #f7b537;
+    text-shadow: 1px 0px 1px black;
+    font-size: larger;
+    margin-top: 1px;
+    font-size: 51px;
+
+  }
+
+  .first {
+    margin: 10px;
+    text-decoration: none;
+    border: black solid 1px;
+    border-radius: 8px;
+    background-color: brown;
+    color: antiquewhite;
+    padding: 0 7px 0 7px;
+    font-size: 38px;
+    margin-bottom: 24px;
+
+  }
+
+  .div2 {
+    display: flex;
+    width: 303px;
+    justify-content: space-between;
+    font-size: 12px;
+
+  }
+
+  .div2 a {
+    text-decoration: none;
+    border: black solid 1px;
+    border-radius: 6px;
+    background-color: blanchedalmond;
+    color: brown;
+    padding: 0 8px 0 8px;
+    font-size: 25px;
+
+  }
+</style>
+
+<body>
+  <div class="div1">
+    <h2>Hello!</h2>
+    <p>Here is your secret 🤫</p>
+    <a href="/secret" class="first">Show me!</a>
+    <div class="div2">
+      <a href="/auth/google">Google Login</a>
+      <a href="/auth/logout">Signout</a>
+    </div>
+  </div>
+</body>
+
+</html>
